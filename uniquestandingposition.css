@@ -4,9 +4,13 @@ body {
     background-image: url('./kruh.png');  
     background-size: cover;  
     background-attachment: fixed;  
-    font-family: Arial, sans-serif;  
+    font-family: Arial, sans-serif; 
+    display: flex;
+    justify-content:center;
+    text-align: center;  
+    gap: 3rem; 
   }  
-  
+
   .content {  
     display: flex;
     justify-content:center;
@@ -58,16 +62,20 @@ body {
     flex-direction: column;
     
   }
- 
-  p {  
-    font-size: 14px;  
-    line-height: 1.6;  
-    margin-bottom: 20px;
-    max-width: 290px; 
-   
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
-  
+  .usp-container p {  
+    font-size: 14px;  
+    line-height: 1.6;  
+    margin-bottom: 20px; 
+    width: 90%; 
+    max-width: 500px;
+  }
+
   @media (max-width: 1300px) {
   
     .content {
@@ -113,6 +121,12 @@ body {
       align-self: center;
     }
   } */
+
+  @media (max-width: 650px){
+    body {
+        padding: 4rem;
+    }
+  } 
   @media (max-width: 400px){
     .content {
       align-items: center;
